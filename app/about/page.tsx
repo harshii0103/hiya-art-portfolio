@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const stats = [
@@ -10,8 +11,8 @@ const stats = [
 
 export default function AboutPage() {
     return (
-        <section className="min-h-screen bg-[#19140f] text-white pt-32 pb-24 px-6">
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+        <section className="min-h-screen bg-[#19140f] text-white pt-32 pb-24">
+            <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
                 {/* Portrait image + role tag */}
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
@@ -42,7 +43,7 @@ export default function AboutPage() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                    
+
                     <h1 className="font-serif text-4xl md:text-5xl mb-8">About the Artist</h1>
 
                     <div className="space-y-5 text-white/80 leading-relaxed">
@@ -78,11 +79,27 @@ export default function AboutPage() {
                                 <p className={`font-serif text-3xl md:text-4xl ${stat.color}`}>
                                     {stat.value}
                                 </p>
-                                <p className="text-xs tracking-widest uppercase text-white/50 mt-1">
+                                <p className="text-sm tracking-wide text-white/60 mt-1">
                                     {stat.label}
                                 </p>
                             </div>
                         ))}
+                    </div>
+
+                    {/* CTA */}
+                    <div className="flex flex-wrap gap-4 mt-10">
+                        <Link
+                            href="/gallery"
+                            className="px-6 py-3 bg-terracotta text-white text-sm uppercase tracking-wide rounded-md hover:bg-terracotta/90 transition-colors"
+                        >
+                            View Gallery
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="px-6 py-3 border border-white/30 text-white text-sm uppercase tracking-wide rounded-md hover:bg-white/10 transition-colors"
+                        >
+                            Get in Touch
+                        </Link>
                     </div>
                 </motion.div>
             </div>
