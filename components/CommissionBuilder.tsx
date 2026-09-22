@@ -10,7 +10,6 @@ const commissionTypes = [
   { id: "devotional", label: "Devotional Painting (Canvas)", price: "₹1,500+" },
   { id: "large", label: "Large Canvas (2×3 ft)", price: "₹3,000+" },
   { id: "mural", label: "Mural Inquiry", price: "Custom Quote" },
-  { id: "crochet", label: "Crochet Item", price: "Custom Quote" },
 ];
 
 type Props = {

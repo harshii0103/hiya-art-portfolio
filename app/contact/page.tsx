@@ -41,16 +41,7 @@ export default function ContactPage() {
         <span className="flex-1 h-px bg-gray-700" />
       </div>
 
-      <p className="text-gray-500 text-sm">
-        Crochet handled by{" "}
-        <a href="#" className="underline">
-          @thekalacrochet
-        </a>{" "}
-        · Personal Instagram{" "}
-        <a href="#" className="underline">
-          @hhiya._
-        </a>
-      </p>
+    
     </div>
   );
 }

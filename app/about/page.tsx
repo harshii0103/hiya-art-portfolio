@@ -61,8 +61,7 @@ export default function AboutPage() {
                             <span className="font-medium text-white">The Fine Arts Society Of Maitreyi College</span>,
                             I balance leadership with my creative practice — channelling the
                             same energy that drives the college&apos;s cultural spirit into
-                            large-scale murals, intimate canvas commissions, and handcrafted
-                            crochet creations.
+                            large-scale murals and intimate canvas commissions.
                         </p>
                         <p>
                             My past collaborations include a large-scale mural for{" "}
