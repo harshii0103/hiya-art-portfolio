@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import BeforeAfterSlider from "@/components/Slider-temp";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import CommissionBuilder from "@/components/CommissionBuilder";
 import { pricingTiers, processSteps } from "@/data/commissions";
 

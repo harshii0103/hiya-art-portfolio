@@ -12,8 +12,8 @@ export default function ContactPage() {
       </h1>
 
       <p className="text-gray-400 max-w-xl mb-10 leading-relaxed">
-        Whether you want a canvas painting, a mural, a custom portrait, or a
-        handmade crochet bouquet — just slide into the DMs. Orders are open.
+        Whether you want a canvas painting, a mural, or a custom portrait —
+        just slide into the DMs. Orders are open.
       </p>
 
       <div className="flex flex-wrap gap-4 justify-center mb-16">
