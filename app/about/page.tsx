@@ -20,11 +20,11 @@ export default function AboutPage() {
                     transition={{ duration: 0.8 }}
                     className="relative"
                 >
-                    <div className="aspect-4/5 w-full bg-neutral-800 rounded-lg overflow-hidden">
+                    <div className="aspect-4/5 w-full bg-neutral-800">
                         <img
                             src="/placeholders/portrait.jpeg"
                             alt="Hiya"
-                            className="w-full h-full object-cover"
+                            className="jharokha-frame w-full h-full object-cover"
                         />
                     </div>
 

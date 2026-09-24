@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import BrushstrokeLoader from "@/components/BrushstrokeLoader";
 import AboutPreview from "@/components/AboutPreview";
 import GalleryPreview from "@/components/GalleryPreview";
 import MuralsPreview from "@/components/MuralsPreview";
@@ -8,15 +9,12 @@ import ContactPreview from "@/components/ContactPreview";
 export default function Home() {
   return (
     <div>
+      <BrushstrokeLoader />
       <HeroSection />
-
-      <div className="max-w-5xl mx-auto px-6 py-24 space-y-16">
-        <AboutPreview />
-        <GalleryPreview />
-        <MuralsPreview />
-        <CommissionsPreview />
-      </div>
-
+      <AboutPreview />
+      <GalleryPreview />
+      <MuralsPreview />
+      <CommissionsPreview />
       <ContactPreview />
     </div>
   );

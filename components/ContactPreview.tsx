@@ -1,10 +1,10 @@
 export default function ContactPreview() {
   return (
-    <div className="text-center py-16">
+    <section className="bg-[#19140f] text-center py-20 px-6">
       <p className="text-terracotta text-sm tracking-widest uppercase mb-4">
         Let&apos;s Create Together
       </p>
-      <h2 className="font-serif text-3xl md:text-5xl mb-6">
+      <h2 className="font-serif text-3xl md:text-5xl mb-6 text-white">
         Ready for your masterpiece?
       </h2>
       <a
@@ -15,6 +15,6 @@ export default function ContactPreview() {
       >
         📷 DM to Order
       </a>
-    </div>
+    </section>
   );
 }

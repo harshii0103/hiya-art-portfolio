@@ -6,3 +6,10 @@
 
   --color-terracotta: #c4612c;
 }
+
+/* Jharokha / mandir-window arch frame — clips an image (or any element)
+   into a pointed-arch shape. Defined via ArchDefs.tsx (rendered once in
+   layout.tsx) so the clip-path is reusable and scales with any container. */
+.jharokha-frame {
+  clip-path: url(#jharokha-arch);
+}
