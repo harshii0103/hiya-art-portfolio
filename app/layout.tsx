@@ -5,6 +5,7 @@ import Navigation from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ArchDefs from "@/components/ArchDefs";
 import BrushstrokeLoader from "../components/BrushstrokeLoader";
+import CustomCursor from "../components/CustomCursor";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces" });
@@ -25,6 +26,7 @@ export default function RootLayout({
         <ArchDefs />
         <Navigation />
         <BrushstrokeLoader />
+        <CustomCursor />
         <main>{children}</main>
         <Footer />
       </body>

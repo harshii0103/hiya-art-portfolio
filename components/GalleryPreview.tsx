@@ -24,7 +24,7 @@ export default function GalleryPreview() {
         </p>
         <div className="grid grid-cols-3 gap-6">
           {preview.map((art) => (
-            <div key={art.id} className="aspect-square bg-neutral-100">
+            <div key={art.id} className="aspect-square bg-neutral-100" data-cursor-text="View">
               <img
                 src={art.image}
                 alt={art.title}
