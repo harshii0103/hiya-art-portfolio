@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import CommissionBuilder from "@/components/CommissionBuilder";
 import { pricingTiers, processSteps } from "@/data/commissions";
@@ -10,7 +11,7 @@ export default function CommissionsPage() {
 
   return (
     <div className="min-h-screen bg-black text-white px-6 md:px-16 py-24">
-      <p className="text-orange-500 text-sm tracking-widest uppercase mb-4">
+      <p className="text-accent text-sm tracking-widest uppercase mb-4">
         Custom Work
       </p>
       <h1 className="text-4xl md:text-6xl font-serif mb-16">
@@ -36,17 +37,24 @@ export default function CommissionsPage() {
             portrait, a deity painting, or something entirely personal.
           </p>
 
-          <div className="space-y-6 mb-10">
-            {processSteps.map((step) => (
-              <div key={step.number} className="flex gap-4">
-                <span className="text-orange-600 font-serif text-2xl">
+          <div className="space-y-8 mb-10">
+            {processSteps.map((step, i) => (
+              <motion.div
+                key={step.number}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.6 }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                className="flex gap-5"
+              >
+                <span className="text-accent font-serif text-4xl md:text-5xl leading-none">
                   {step.number}
                 </span>
                 <div>
                   <p className="font-semibold">{step.title}</p>
                   <p className="text-gray-400 text-sm">{step.description}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
 
@@ -58,7 +66,7 @@ export default function CommissionsPage() {
               {pricingTiers.map((tier) => (
                 <div key={tier.name} className="flex justify-between">
                   <span>{tier.name}</span>
-                  <span className="text-orange-400 font-medium">
+                  <span className="text-accent font-medium">
                     {tier.price}
                   </span>
                 </div>
@@ -68,7 +76,7 @@ export default function CommissionsPage() {
 
           <button
             onClick={() => setShowBuilder(true)}
-            className="bg-orange-600 hover:bg-orange-700 transition-colors text-white px-6 py-3 rounded-full"
+            className="bg-accent hover:bg-accent/90 transition-colors text-white px-6 py-3 rounded-full"
           >
             Start Your Commission →
           </button>

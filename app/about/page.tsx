@@ -4,14 +4,15 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const stats = [
-    { value: "50+", label: "Commissions", color: "text-terracotta" },
-    { value: "3+", label: "Murals", color: "text-[#d4a017]" },
-    { value: "∞", label: "Brushstrokes", color: "text-[#3d5a99]" },
+    { value: "50+", label: "Commissions", color: "text-accent" },
+    { value: "3+", label: "Murals", color: "text-[#D9A441]" },
+    { value: "∞", label: "Brushstrokes", color: "text-[#F2EDE4]" },
 ];
 
 export default function AboutPage() {
     return (
-        <section className="min-h-screen bg-[#19140f] text-white pt-32 pb-24">
+        <>
+        <section className="min-h-screen bg-[#161616] text-white pt-32 pb-24">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
                 {/* Portrait image + role tag */}
                 <motion.div
@@ -51,7 +52,7 @@ export default function AboutPage() {
                             I&apos;m Himanshi Bisht, an artist based in Delhi, and my
                             brushstrokes carry the weight of mythology and the lightness of
                             devotion. Known on Instagram as{" "}
-                            <span className="text-terracotta">@arts.hiyaa</span>, I create
+                            <span className="text-accent">@arts.hiyaa</span>, I create
                             paintings that breathe — mythological figures, devotional
                             portraits, and raw pencil studies that feel both ancient and
                             alive.
@@ -65,7 +66,7 @@ export default function AboutPage() {
                         </p>
                         <p>
                             My past collaborations include a large-scale mural for{" "}
-                            <span className="font-medium text-[#d4a017]">Colgate India</span>,
+                            <span className="font-medium text-[#D9A441]">Colgate India</span>,
                             and my work spans gods, portraits, skulls, and a yin-yang cat —
                             because art, I believe, should feel like everything at once.
                         </p>
@@ -89,7 +90,7 @@ export default function AboutPage() {
                     <div className="flex flex-wrap gap-4 mt-10">
                         <Link
                             href="/gallery"
-                            className="px-6 py-3 bg-terracotta text-white text-sm uppercase tracking-wide rounded-md hover:bg-terracotta/90 transition-colors"
+                            className="px-6 py-3 bg-accent text-white text-sm uppercase tracking-wide rounded-md hover:bg-accent/90 transition-colors"
                         >
                             View Gallery
                         </Link>
@@ -103,5 +104,42 @@ export default function AboutPage() {
                 </motion.div>
             </div>
         </section>
+
+        {/* Philosophy statement — full-screen, bold typographic reveal */}
+        <section className="min-h-screen bg-black text-white flex items-center justify-center px-6 py-24">
+            <div className="max-w-4xl text-center">
+                <motion.p
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.8 }}
+                    className="text-xs md:text-sm tracking-[0.3em] uppercase text-accent mb-8"
+                >
+                    The Philosophy
+                </motion.p>
+                <motion.h2
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.9, delay: 0.1 }}
+                    className="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight"
+                >
+                    I worship <span className="text-accent italic">through</span>{" "}
+                    creation.
+                </motion.h2>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    className="mt-10 text-white/60 text-base md:text-lg leading-relaxed max-w-xl mx-auto"
+                >
+                    Every brushstroke carries the weight of mythology and the
+                    lightness of devotion — art, for me, isn&apos;t separate from
+                    prayer. It&apos;s the same act, held in different hands.
+                </motion.p>
+            </div>
+        </section>
+        </>
     );
 }

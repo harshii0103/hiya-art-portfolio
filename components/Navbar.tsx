@@ -30,7 +30,7 @@ export default function Navigation() {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
         scrolled
-          ? "bg-[#19140f]/90 backdrop-blur-md border-b border-white/10"
+          ? "bg-[#161616]/90 backdrop-blur-md border-b border-white/10"
           : "bg-gradient-to-b from-black/60 to-transparent border-b border-transparent"
       }`}
     >
@@ -47,7 +47,7 @@ export default function Navigation() {
               href={link.href}
               className={`text-sm uppercase tracking-wide transition-colors border-b pb-1 ${
                 pathname === link.href
-                  ? "text-terracotta border-terracotta"
+                  ? "text-accent border-accent"
                   : "text-white/70 border-transparent hover:text-white"
               }`}
             >
@@ -74,7 +74,7 @@ export default function Navigation() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden overflow-hidden bg-[#19140f] border-t border-white/10"
+            className="md:hidden overflow-hidden bg-[#161616] border-t border-white/10"
           >
             <div className="flex flex-col px-6 py-4 gap-4">
               {navLinks.map((link) => (
@@ -83,7 +83,7 @@ export default function Navigation() {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={`text-sm uppercase tracking-wide ${
-                    pathname === link.href ? "text-terracotta" : "text-white/70"
+                    pathname === link.href ? "text-accent" : "text-white/70"
                   }`}
                 >
                   {link.name}

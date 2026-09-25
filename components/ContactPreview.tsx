@@ -1,7 +1,7 @@
 export default function ContactPreview() {
   return (
-    <section className="bg-[#19140f] text-center py-20 px-6">
-      <p className="text-terracotta text-sm tracking-widest uppercase mb-4">
+    <section className="bg-[#161616] text-center py-20 px-6">
+      <p className="text-accent text-sm tracking-widest uppercase mb-4">
         Let&apos;s Create Together
       </p>
       <h2 className="font-serif text-3xl md:text-5xl mb-6 text-white">
@@ -11,7 +11,7 @@ export default function ContactPreview() {
         href="https://instagram.com/arts.hiyaa"
         target="_blank"
         rel="noreferrer"
-        className="inline-block bg-terracotta hover:opacity-90 transition-opacity text-white px-8 py-3 rounded-full"
+        className="inline-block bg-accent hover:opacity-90 transition-opacity text-white px-8 py-3 rounded-full"
       >
         📷 DM to Order
       </a>

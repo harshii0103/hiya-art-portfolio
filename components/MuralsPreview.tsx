@@ -5,7 +5,7 @@ export default function MuralsPreview() {
   const preview = murals.slice(0, 2);
 
   return (
-    <section className="bg-[#19140f] text-white">
+    <section className="bg-[#161616] text-white">
       <Link
         href="/murals"
         className="group block max-w-5xl mx-auto px-6 py-20"
@@ -14,7 +14,7 @@ export default function MuralsPreview() {
           <h2 className="font-serif text-3xl md:text-4xl group-hover:translate-x-2 transition-transform">
             Murals
           </h2>
-          <span className="text-sm text-white/40 group-hover:text-terracotta transition-colors">
+          <span className="text-sm text-white/40 group-hover:text-accent transition-colors">
             View →
           </span>
         </div>

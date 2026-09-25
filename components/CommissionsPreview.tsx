@@ -13,7 +13,7 @@ export default function CommissionsPreview() {
             <h2 className="font-serif text-3xl md:text-4xl group-hover:translate-x-2 transition-transform">
               Commissions
             </h2>
-            <span className="text-sm text-neutral-400 group-hover:text-terracotta transition-colors">
+            <span className="text-sm text-neutral-400 group-hover:text-accent transition-colors">
               View →
             </span>
           </div>
@@ -29,7 +29,7 @@ export default function CommissionsPreview() {
                 className="flex justify-between text-sm border-b border-neutral-200 pb-2"
               >
                 <span className="text-neutral-600">{tier.name}</span>
-                <span className="text-terracotta font-medium">
+                <span className="text-accent font-medium">
                   {tier.price}
                 </span>
               </div>

@@ -20,13 +20,13 @@ export default function AboutPreview() {
             <h2 className="font-serif text-3xl md:text-4xl group-hover:translate-x-2 transition-transform">
               About
             </h2>
-            <span className="text-sm text-neutral-400 group-hover:text-terracotta transition-colors">
+            <span className="text-sm text-neutral-400 group-hover:text-accent transition-colors">
               View →
             </span>
           </div>
           <p className="text-neutral-500 leading-relaxed">
             President of{" "}
-            <GradientText colors={["#D4622B", "#f2a365", "#D4622B"]} animationSpeed={4}>
+            <GradientText colors={["#C1272D", "#f2a365", "#C1272D"]} animationSpeed={4}>
               The Fine Arts Society of Maitreyi College
             </GradientText>
             , University of Delhi. My work spans gods, portraits, skulls, and
@@ -34,13 +34,13 @@ export default function AboutPreview() {
           </p>
           <div className="flex gap-8 mt-6">
             <div>
-              <p className="font-serif text-2xl text-terracotta">50+</p>
+              <p className="font-serif text-2xl text-accent">50+</p>
               <p className="text-xs text-neutral-400 uppercase tracking-wide">
                 Commissions
               </p>
             </div>
             <div>
-              <p className="font-serif text-2xl text-terracotta">3+</p>
+              <p className="font-serif text-2xl text-accent">3+</p>
               <p className="text-xs text-neutral-400 uppercase tracking-wide">
                 Murals
               </p>

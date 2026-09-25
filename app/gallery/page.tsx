@@ -94,7 +94,7 @@ export default function GalleryPage() {
                         key={cat}
                         onClick={() => setActiveCategory(cat)}
                         className={`relative px-4 py-2 text-sm uppercase tracking-wide transition-colors ${activeCategory === cat
-                            ? "text-orange-500"
+                            ? "text-accent"
                             : "text-gray-400 hover:text-white"
                             }`}
                     >
@@ -102,7 +102,7 @@ export default function GalleryPage() {
                         {activeCategory === cat && (
                             <motion.div
                                 layoutId="tab-underline"
-                                className="absolute left-0 right-0 -bottom-[2px] h-[2px] bg-orange-500"
+                                className="absolute left-0 right-0 -bottom-[2px] h-[2px] bg-accent"
                                 transition={{ type: "spring", stiffness: 380, damping: 30 }}
                             />
                         )}

@@ -10,13 +10,13 @@ const navLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#19140f] text-white/70 border-t border-white/10">
+    <footer className="bg-[#161616] text-white/70 border-t border-white/10">
       <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-12">
         <div>
           <Link href="/" className="font-serif text-2xl text-white">
             Hiya
           </Link>
-          <p className="mt-3 text-sm italic text-terracotta">
+          <p className="mt-3 text-sm italic text-accent">
             Once upon a brushstroke...
           </p>
           <p className="mt-4 text-sm leading-relaxed max-w-xs">
@@ -34,7 +34,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm hover:text-terracotta transition-colors w-fit"
+                className="text-sm hover:text-accent transition-colors w-fit"
               >
                 {link.name}
               </Link>
@@ -50,7 +50,7 @@ export default function Footer() {
             href="https://instagram.com/arts.hiyaa"
             target="_blank"
             rel="noreferrer"
-            className="text-sm hover:text-terracotta transition-colors w-fit block mb-2"
+            className="text-sm hover:text-accent transition-colors w-fit block mb-2"
           >
             📷 @arts.hiyaa
           </a>
@@ -58,7 +58,7 @@ export default function Footer() {
             href="https://wa.me/919013241865"
             target="_blank"
             rel="noreferrer"
-            className="text-sm hover:text-terracotta transition-colors w-fit block"
+            className="text-sm hover:text-accent transition-colors w-fit block"
           >
             💬 WhatsApp
           </a>

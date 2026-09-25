@@ -1,14 +1,14 @@
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-32 text-center">
-      <p className="text-orange-500 text-sm tracking-widest uppercase mb-6">
+      <p className="text-accent text-sm tracking-widest uppercase mb-6">
         Let&apos;s Create Together
       </p>
 
       <h1 className="text-4xl md:text-6xl font-serif mb-4 leading-tight">
         Ready for your
         <br />
-        <span className="italic text-orange-500">masterpiece?</span>
+        <span className="italic text-accent">masterpiece?</span>
       </h1>
 
       <p className="text-gray-400 max-w-xl mb-10 leading-relaxed">
@@ -20,7 +20,7 @@ export default function ContactPage() {
         <a
           href="https://instagram.com/arts.hiyaa"
           target="_blank"
-          className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 transition-colors text-white px-6 py-3 rounded-full"
+          className="flex items-center gap-2 bg-accent hover:bg-accent/90 transition-colors text-white px-6 py-3 rounded-full"
         >
           📷 @arts.hiyaa
         </a>

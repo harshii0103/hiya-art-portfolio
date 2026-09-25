@@ -14,7 +14,7 @@ export default function GalleryPreview() {
           <h2 className="font-serif text-3xl md:text-4xl group-hover:translate-x-2 transition-transform">
             Gallery
           </h2>
-          <span className="text-sm text-neutral-400 group-hover:text-terracotta transition-colors">
+          <span className="text-sm text-neutral-400 group-hover:text-accent transition-colors">
             View →
           </span>
         </div>

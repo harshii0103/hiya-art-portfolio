@@ -64,7 +64,7 @@ export default function CommissionBuilder({ onClose }: Props) {
             <div
               key={i}
               className={`h-1 flex-1 rounded-full transition-colors ${
-                i <= step ? "bg-orange-500" : "bg-neutral-700"
+                i <= step ? "bg-accent" : "bg-neutral-700"
               }`}
             />
           ))}
@@ -88,12 +88,12 @@ export default function CommissionBuilder({ onClose }: Props) {
                     onClick={() => setSelectedType(type.id)}
                     className={`w-full flex justify-between items-center px-4 py-3 rounded-lg border transition-colors ${
                       selectedType === type.id
-                        ? "border-orange-500 bg-orange-500/10"
+                        ? "border-accent bg-accent/10"
                         : "border-neutral-700 hover:border-neutral-500"
                     }`}
                   >
                     <span>{type.label}</span>
-                    <span className="text-orange-400 text-sm">
+                    <span className="text-accent text-sm">
                       {type.price}
                     </span>
                   </button>
@@ -115,7 +115,7 @@ export default function CommissionBuilder({ onClose }: Props) {
                 onChange={(e) => setDetails(e.target.value)}
                 placeholder="Describe what you have in mind — a reference photo, a feeling, a style..."
                 rows={4}
-                className="w-full bg-neutral-800 border border-neutral-700 rounded-lg p-3 mb-4 focus:outline-none focus:border-orange-500"
+                className="w-full bg-neutral-800 border border-neutral-700 rounded-lg p-3 mb-4 focus:outline-none focus:border-accent"
               />
               <label className="text-sm text-gray-400 mb-1 block">
                 Preferred deadline (optional)
@@ -125,7 +125,7 @@ export default function CommissionBuilder({ onClose }: Props) {
                 value={deadline}
                 onChange={(e) => setDeadline(e.target.value)}
                 placeholder="e.g. within 2 weeks"
-                className="w-full bg-neutral-800 border border-neutral-700 rounded-lg p-3 focus:outline-none focus:border-orange-500"
+                className="w-full bg-neutral-800 border border-neutral-700 rounded-lg p-3 focus:outline-none focus:border-accent"
               />
             </motion.div>
           )}
@@ -145,7 +145,7 @@ export default function CommissionBuilder({ onClose }: Props) {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Your name"
-                className="w-full bg-neutral-800 border border-neutral-700 rounded-lg p-3 focus:outline-none focus:border-orange-500"
+                className="w-full bg-neutral-800 border border-neutral-700 rounded-lg p-3 focus:outline-none focus:border-accent"
               />
             </motion.div>
           )}
@@ -208,7 +208,7 @@ export default function CommissionBuilder({ onClose }: Props) {
             <button
               onClick={handleNext}
               disabled={step === 0 && !selectedType}
-              className="bg-orange-600 hover:bg-orange-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors text-white px-6 py-2 rounded-full"
+              className="bg-accent hover:bg-accent/90 disabled:opacity-40 disabled:cursor-not-allowed transition-colors text-white px-6 py-2 rounded-full"
             >
               Next →
             </button>

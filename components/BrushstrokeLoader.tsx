@@ -75,7 +75,7 @@ export default function BrushstrokeLoader() {
                 fontFamily: "'Caveat', cursive",
                 fontWeight: 600,
                 fontSize: "5rem",
-                color: "#D4622B",
+                color: "#C1272D",
                 display: "inline-block",
                 opacity: 0,
                 animation: `letterIn 0.4s ease forwards`,

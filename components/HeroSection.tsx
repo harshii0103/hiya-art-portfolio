@@ -52,7 +52,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-4 text-lg md:text-xl italic text-terracotta"
+          className="mt-4 text-lg md:text-xl italic text-accent"
         >
           Once upon a brushstroke...
         </motion.p>
@@ -75,7 +75,7 @@ export default function HeroSection() {
             key={i}
             onClick={() => setCurrent(i)}
             className={`h-1.5 rounded-full transition-all ${
-              i === current ? "w-6 bg-terracotta" : "w-1.5 bg-white/40"
+              i === current ? "w-6 bg-accent" : "w-1.5 bg-white/40"
             }`}
             aria-label={`Slide ${i + 1}`}
           />
